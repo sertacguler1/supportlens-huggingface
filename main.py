@@ -1,6 +1,11 @@
-def main():
-    print("SupportLens environment is ready.")
+from datasets import load_dataset
 
-if __name__ == "__main__":
-    main()
+dataset = load_dataset("Tobi-Bueck/customer-support-tickets")
+
+train_data = dataset["train"]
+
+print(len(train_data))
+
+
+
 
